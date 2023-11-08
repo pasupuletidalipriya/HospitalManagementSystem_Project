@@ -1,3 +1,5 @@
+//Patient entity class with accounts and transaction details
+//importing required packages and classes 
 package anudip.com.entities;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,8 +8,8 @@ import jakarta.persistence.Id;
 
 import lombok.Data;
 
-@Data
-@Entity
+@Data //generates the constructors,setters-getters, toString methods
+@Entity //Entity annotation
 public class Patient
 {
 	@Id

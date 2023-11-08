@@ -1,3 +1,5 @@
+//AppointmentServiceImpl class
+//importing required classes and packages
 package anudip.com.serviceimpl;
 
 import java.time.LocalDateTime;
@@ -21,7 +23,7 @@ public class AppointmentServiceImpl implements AppointmentService
 		super();
 		this.appointmentRepo=appointmentRepo;
 	}
-
+	 //retrieving the records by using appointment Id
 	@Override
 	public Appointment getAppointment(Long id)
 	{
@@ -29,40 +31,42 @@ public class AppointmentServiceImpl implements AppointmentService
 	Appointment a1=a.get();
 	return a1 ;
 	}
-
+	//retrieving the records by using appointment status
 	@Override
 	public Appointment getAppointment(String appointmentStatus)
 	{
 		Appointment a=appointmentRepo.findByAppointmentStatus(appointmentStatus);
 		return a;
 	}
+	//retrieving the records by using appointment time
 	@Override
 	public Appointment getAppointment(LocalDateTime appointmentTime) 
 	{
 		Appointment a=appointmentRepo.findByAppointmentTime(appointmentTime);
 		return a;
 	}
+	//fetching the records
 	@Override
 	public List<Appointment> getAppointment()
 	{
 	    List<Appointment>  list=appointmentRepo.findAll();
 		return list;
 	}
-
+    //insertion operation
 	@Override
 	public String insertAppointment(Appointment appointment)
 	{
 		appointmentRepo.save(appointment);
 		return "One record has been inserted";
 	}
-
+    //update operation
 	@Override
 	public String updateAppointment(Appointment appointment) 
 	{
 		appointmentRepo.save(appointment);
 		return "One record has been updated";
 	}
-
+    //delete operation
 	@Override
 	public String deleteAppointment(Long id) 
 	{

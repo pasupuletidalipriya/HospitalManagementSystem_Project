@@ -107,18 +107,4 @@ public class DoctorControllerTest
       assertEquals(doctor, responseEntity.getBody());
   }
 
-	
-	/*
-	 * @Test void testGetDoctorByspecialization() { String specialization
-	 * ="Dermatologist"; Doctor doctor = new Doctor();
-	 * Mockito.when(doctorService.getDoctors(specialization)).thenReturn(doctor);
-	 * 
-	 * ResponseEntity<Doctor> responseEntity
-	 * =doctorController.getspecialization(specialization);
-	 * 
-	 * assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-	 * assertEquals(doctor, responseEntity.getBody()); }
-	 */
-  
-  
 }

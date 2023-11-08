@@ -1,5 +1,4 @@
 //importing necessary packages and classes
-
 package anudip.com;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -104,18 +103,4 @@ public class PatientControllerTest
 		assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
 		assertEquals(patients, responseEntity.getBody());
 	}
-
-	/*
-	 * @Test void testGetPatientByDiagnosis() { String diagnosis = "Hair Fall";
-	 * Patient patients = new Patient();
-	 * Mockito.when(patientService.getPatients(diagnosis)).thenReturn(patients);
-	 * 
-	 * ResponseEntity<Patient> responseEntity =
-	 * patientController.getdiagnosis(diagnosis);
-	 * 
-	 * assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-	 * assertEquals(patients, responseEntity.getBody()); }
-	 */
-	
-	
 }

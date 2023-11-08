@@ -1,5 +1,6 @@
+//DoctorService  interface
+//importing required classes and packages
 package anudip.com.service;
-
 import java.util.List;
 import anudip.com.entities.Doctor;
 
