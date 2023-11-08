@@ -94,19 +94,7 @@ public class AppointmentControllerTest
 		assertEquals(appointment, responseEntity.getBody());
 	}
 
-	/*
-	 * @Test void testGetAppointmentByName() { String projectName = "TestProject";
-	 * Project project = new Project();
-	 * Mockito.when(projectService.getProjectByName(projectName)).thenReturn(project
-	 * );
-	 * 
-	 * ResponseEntity<Project> responseEntity =
-	 * projectController.getPN(projectName);
-	 * 
-	 * assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-	 * assertEquals(project, responseEntity.getBody()); }
-	 */
-
+	
 	@Test
 	void testGetAppointmentStatus() {
 		String appointmentStatus = "Scheduled";

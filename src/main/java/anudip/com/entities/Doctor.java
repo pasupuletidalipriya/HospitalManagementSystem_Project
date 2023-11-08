@@ -19,7 +19,4 @@ public class Doctor
 	private String qualification;
 	private String contactInfo;
 	
-	
-    
-	
 }
